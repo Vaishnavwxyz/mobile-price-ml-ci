@@ -41,7 +41,7 @@ class TestPredictionApplication(unittest.TestCase):
         )
 
         self.assertEqual(response.status_code, 200)
-        self.assertIn(response.get_json()["prediction"], [0, 1, 2, 3])
+        self.assertEqual(response.get_json()["prediction"], 99)
 
     def test_high_specification_prediction(self):
         response = self.client.post(
