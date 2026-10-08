@@ -47,8 +47,6 @@ jobs:
         with:
           name: mobile-price-ml-artifacts
           path: |
-            mobile_price_model_missing.pkl
-            metrics.json
-            train.csv
+            completely_missing_file.pkl
           if-no-files-found: error
           retention-days: 7
