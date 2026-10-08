@@ -47,7 +47,7 @@ jobs:
         with:
           name: mobile-price-ml-artifacts
           path: |
-            mobile_price_model.pkl
+            mobile_price_model_missing.pkl
             metrics.json
             train.csv
           if-no-files-found: error
